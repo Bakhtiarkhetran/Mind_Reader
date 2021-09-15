@@ -4,7 +4,7 @@ apply plugin: 'com.chaquo.python'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.chaquo.python.console"
+        applicationId 'mind.reader'
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -20,8 +20,6 @@ android {
                 install "pandas"
                 install "nltk"
             }
-
-
         }
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
