@@ -21,6 +21,7 @@ def Model2():
                 print("Ask Question No:",count)
                 count=count+1
                 Question = input("")
+                Question = Question.replace("?","")
                 #token=word_tokenize(Question)
                 #print("Tokenize nai kr raha hai bsdka.?")
                 token=Question.split()
@@ -43,12 +44,14 @@ def Model2():
             string2=str2.join( list_places)
             print("Have you guessed what i am thinking?")
             Answer = input("Enter the place: ").upper()
-            
-            if Answer in string2.strip() and len(Answer)>2:
-                 print("You are right")
+
+            if (len(Answer.strip())):
+                if Answer in string2.strip():
+                    print("You are right")
+                else:
+                    print("sorry i was thinking about:\n"+string2.capitalize())
             else:
                 print("sorry i was thinking about:\n"+string2.capitalize())
-
     Asking_questions()               
 
 

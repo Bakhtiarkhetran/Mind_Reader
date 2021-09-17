@@ -40,7 +40,7 @@ public class machineGuessing extends PythonConsoleActivityM2 {
         public void run() {
             {
                 try {
-                    py.getModule("Module_2").callAttr("Model2");
+                    py.getModule("main2").callAttr("Model2");
                 }catch (Exception e){
                     e.printStackTrace();
                 }
